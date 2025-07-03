@@ -2,7 +2,7 @@
 
 This is a challenge by Coodesh: https://github.com/JeffersonSarmento/TestCodeGroup
 
-# Construir as seguintes consultas com base nos dados fornecidos no repositório clonado acima:
+# Consultas com base nos dados fornecidos no repositório clonado acima:
 
 - Listar todos Clientes que não tenham realizado uma compra;
 - Listar os Produtos que não tenham sido comprados;
