@@ -1,0 +1,16 @@
+# Ignora TUDO, exceto arquivos .sql e documentação
+*.*
+!*.sql
+!.gitignore
+!README.md
+
+# Arquivos específicos de banco de dados/SQL a ignorar
+*.bak       # Backups de banco de dados
+*.mdf       # Arquivos primários do SQL Server
+*.ldf       # Logs do SQL Server
+*.log       # Arquivos de log gerais
+
+# Pastas/arquivos de desenvolvimento
+.vscode/    # Configurações do VS Code
+.idea/      # Configurações do IntelliJ/DataGrip
+*.tmp       # Arquivos temporários
