@@ -10,4 +10,4 @@ This is a challenge by Coodesh: https://github.com/JeffersonSarmento/TestCodeGro
 - Agrupar a quantidade de vendas que uma determinada Marca por Loja;
 - Listar os Funcionarios que não estejam relacionados a um Pedido.
 
-Para este teste, escolhi utilizar T-SQL e subir um arquivo para separadamente para cada consulta.
+OBS.: Para este teste, escolhi utilizar T-SQL e subir um arquivo para separadamente para cada consulta.
