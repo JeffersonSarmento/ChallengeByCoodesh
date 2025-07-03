@@ -8,9 +8,9 @@ SELECT pro.product_id
           WHEN pro.discontinued = 1 THEN 'Discontinued'
           ELSE 'Active'
        END AS product_status            -- Status do produto
-FROM products p LEFT JOIN order_items oi ON pro.product_id = ite.product_id
-                                        AND ite.order_id IS NOT NULL
-                LEFT JOIN brands b ON pro.brand_id = mar.brand_id
+FROM products pro LEFT JOIN order_items ite ON pro.product_id = ite.product_id
+                                           AND ite.order_id IS NOT NULL
+                LEFT JOIN brands mar ON pro.brand_id = mar.brand_id
                 LEFT JOIN categories cat ON pro.category_id = cat.category_id
 WHERE ite.product_id IS NULL
 AND pro.discontinued = 0  --produtos ativos
