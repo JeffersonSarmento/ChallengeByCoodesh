@@ -3,7 +3,8 @@ SELECT cli.customer_id
      , cli.email
      , cli.phone
      , cli.city + '/' + cli.state AS location  -- Adicionado para contexto geográfico
-FROM customers cli LEFT JOIN orders ord ON cli.customer_id = ord.customer_id
+FROM customers cli WITH (NOLOCK)
+LEFT JOIN orders ord WITH (NOLOCK) ON cli.customer_id = ord.customer_id
 WHERE ord.order_id IS NULL
 AND cli.active = 1  -- Filtro opcional para clientes ativos
 ORDER BY cli.last_name
